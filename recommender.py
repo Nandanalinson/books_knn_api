@@ -8,6 +8,9 @@ books = pd.read_csv("data/Books.csv")
 book_data = books.dropna(axis=0)
 book_features = ['ISBN','Book-Title','Book-Author','Publisher']
 book = book_data[book_features]
+
+
+
 book.drop_duplicates(subset="ISBN", inplace=True)
 
 #ratings
