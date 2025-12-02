@@ -1,6 +1,5 @@
 function getRecommendations() {
     const bookName = document.getElementById("userBook").value;
-    console.log("Book:", bookName);
 
     fetch("/get_similar", {
         method: "POST",
