@@ -246,3 +246,10 @@ Visit:
 * Add user login & personalization
 * Implement Matrix Factorization (SVD, ALS)
 * Deploy on Render/DigitalOcean/AWS
+
+
+
+
+https://medium.com/@zaiinn440/one-stop-guide-for-production-recommendation-systems-9491f68d92e3
+
+https://marutitech.medium.com/what-are-the-types-of-recommendation-systems-3487cbafa7c9

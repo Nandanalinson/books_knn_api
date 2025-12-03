@@ -5,9 +5,11 @@ import numpy as np
 
 app = Flask(__name__)
 
+chunk_list = []
+for chunk in pd.read_csv("data/Books.csv", chunksize=50000, low_memory=False):
+    chunk_list.append(chunk)
 
-original_books_df = pd.read_csv("data/Books.csv")
-
+original_books_df = pd.concat(chunk_list, ignore_index=True)
 
 model_data = pickle.load(open("data/recommender.pkl", "rb"))
 model_knn = model_data["model_knn"]
